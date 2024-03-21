@@ -1,0 +1,19 @@
+<p>certificate-getall works!</p>
+<div *ngIf="certificates">
+    <h2>Certificate List</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Certificate ID</th>
+          <th>Certificate Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let certificate of certificates">
+          <td>{{ certificate.certificateId }}</td>
+          <td>{{ certificate.certificateDate }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

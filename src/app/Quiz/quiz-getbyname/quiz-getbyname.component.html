@@ -1,0 +1,12 @@
+<p>quiz-getbyname works!</p>
+<form (ngSubmit)="onSubmit()">
+    <div>
+      <label for="id">Quiz ID:</label>
+      <input type="number" id="id" name="id" [(ngModel)]="quiz.id" required>
+    </div>
+    <div>
+      <label for="mark">Mark:</label>
+      <input type="number" id="mark" name="mark" [(ngModel)]="quiz.mark" required>
+    </div>
+    <button type="submit">Create Quiz</button>
+  </form>

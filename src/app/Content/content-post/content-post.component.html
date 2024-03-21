@@ -1,0 +1,13 @@
+<p>content-post works!</p>
+  <form (ngSubmit)="onSubmit()">
+    <div>
+      <label for="contentId">Content ID:</label>
+      <input type="number" id="contentId" name="contentId" [(ngModel)]="content.contentId" required>
+    </div>
+    <div>
+      <label for="contentType">Content Type:</label>
+      <input type="text" id="contentType" name="contentType" [(ngModel)]="content.contenttype" required>
+    </div>
+    <button type="submit">Create Content</button>
+  </form>
+  

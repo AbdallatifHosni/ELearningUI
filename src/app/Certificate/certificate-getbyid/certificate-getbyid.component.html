@@ -1,0 +1,12 @@
+<p>certificate-getbyid works!</p>
+<form (ngSubmit)="GetById()">
+    <div>
+      <label for="certificateId">Certificate ID:</label>
+      <input type="number" id="certificateId" name="certificateId" [(ngModel)]="certificate.certificateId" required>
+    </div>
+    <div>
+      <label for="certificateDate">Certificate Date:</label>
+      <input type="date" id="certificateDate" name="certificateDate" [(ngModel)]="certificate.certificateDate" required>
+    </div>
+    <button type="GetById">Create Certificate</button>
+  </form>

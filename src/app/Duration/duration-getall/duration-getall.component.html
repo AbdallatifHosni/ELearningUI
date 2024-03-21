@@ -1,0 +1,25 @@
+<p>duration-getall works!</p>
+<div *ngIf="durations">
+    <h2>Duration List</h2>
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Duration Date</th>
+            <th>Duration Type</th>
+            <th>Course ID</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let duration of durations">
+            <td>{{ duration.id }}</td>
+            <td>{{ duration.durationDate | date }}</td>
+            <td>{{ duration.durationType }}</td>
+            <td>{{ duration.courseId }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  

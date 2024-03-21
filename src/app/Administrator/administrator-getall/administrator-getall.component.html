@@ -1,0 +1,19 @@
+<p>administrator-getall works!</p>
+<div *ngIf="administrators">
+    <h2>Administrator List</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let administrator of administrators">
+          <td>{{ administrator.id }}</td>
+          <td>{{ administrator.name }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

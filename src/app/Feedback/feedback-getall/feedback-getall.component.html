@@ -1,0 +1,10 @@
+<p>feedback-getall works!</p>
+<div *ngIf="feedbackEntries">
+    <h2>Feedback Entries</h2>
+    <ul>
+      <li *ngFor="let feedback of feedbackEntries">
+        Feedback ID: {{ feedback.feedbackId }}, Quiz ID: {{ feedback.quizID }}
+      </li>
+    </ul>
+  </div>
+  

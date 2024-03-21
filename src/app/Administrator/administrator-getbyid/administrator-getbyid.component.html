@@ -1,0 +1,14 @@
+<p>administrator-getbyid works!</p>
+<form (ngSubmit)="update()">
+    <div>
+      <label for="id">ID:</label>
+      <input type="number" id="id" name="id" [(ngModel)]="administrator.id" required>
+      <div *ngIf="!administrator.id">ID is required.</div>
+    </div>
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" [(ngModel)]="administrator.name" required>
+      <div *ngIf="!administrator.name">Name is required.</div>
+    </div>
+    <button type="update" [disabled]="!administrator.id || !administrator.name">Submit</button>
+  </form>

@@ -1,0 +1,21 @@
+<p>duration-post works!</p>
+<form (ngSubmit)="onSubmit()">
+    <div>
+      <label for="id">ID:</label>
+      <input type="number" id="id" name="id" [(ngModel)]="duration.id" required>
+    </div>
+    <div>
+      <label for="durationDate">Duration Date:</label>
+      <input type="date" id="durationDate" name="durationDate" [(ngModel)]="duration.durationDate" required>
+    </div>
+    <div>
+      <label for="durationType">Duration Type:</label>
+      <input type="number" id="durationType" name="durationType" [(ngModel)]="duration.durationType" required>
+    </div>
+    <div>
+      <label for="courseId">Course ID:</label>
+      <input type="number" id="courseId" name="courseId" [(ngModel)]="duration.courseId" required>
+    </div>
+    <button type="submit">Create Duration</button>
+  </form>
+  
